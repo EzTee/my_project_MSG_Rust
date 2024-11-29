@@ -20,7 +20,7 @@ getChat();
 </script>
 
 <template>
-  <main>
+  <main class="container mx-auto flex justify-center items-center flex-col py-[24px] border-2 border-cyan-500 my-h w-fit rounded-xl">
     <img src="/logo2.svg" alt="DFINITY logo" />
     <br />
     <br />
@@ -29,8 +29,8 @@ getChat();
       <input id="msg" alt="msg" type="text" />
       <button type="submit">Click Me!</button>
     </form>
-    <section id="displayChat">
-      <div v-for="msg in displayChat">{{ msg }}</div>
+    <section id="displayChat" class="w-full">
+      <div v-for="msg in displayChat" class="flex justify-start">{{ msg }}</div>
     </section>
   </main>
 </template>
